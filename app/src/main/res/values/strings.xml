@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">OurBook</string>
     <string name="action_settings">Settings</string>
+
+    <string name="book_name">书名</string>
+    <string name="book_author">作者</string>
+    <string name="book_brief">简介</string>
+    <string name="book_count">字数</string>
+    <string name="book_evaluate">评分</string>
+
 </resources>
