@@ -8,4 +8,8 @@
     <string name="book_count">字数</string>
     <string name="book_evaluate">评分</string>
 
+    <string name="book_author_show">作者:%1$s</string>
+    <string name="book_brief_show">简介:%1$s</string>
+    <string name="book_count_show">字数:%1$d</string>
+    <string name="book_evaluate_show">评分 : %1$.1f</string>
 </resources>
