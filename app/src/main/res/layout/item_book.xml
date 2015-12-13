@@ -13,7 +13,7 @@
         android:layout_height="180dp"
         card_view:cardCornerRadius="3dp"
         card_view:cardBackgroundColor="#FFFFFF"
-        card_view:cardElevation="15dp">
+        card_view:cardElevation="3dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -26,8 +26,9 @@
                 android:orientation="vertical"
                 >
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_width="96dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/book_image"/>
                 <RatingBar
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -46,6 +47,10 @@
                     android:textSize="@dimen/text_size_small"
                     android:id="@+id/book_text_evaluate"/>
             </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"/>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

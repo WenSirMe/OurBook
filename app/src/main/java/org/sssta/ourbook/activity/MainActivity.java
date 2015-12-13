@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import org.sssta.ourbook.DataHelp;
 import org.sssta.ourbook.R;
 import org.sssta.ourbook.adapter.BookListAdapter;
+import org.sssta.ourbook.ui.SpaceDecoration;
+import org.sssta.ourbook.util.DensityUtil;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Bind(R.id.book_list)
     RecyclerView bookList;
-    private final BookListAdapter mBookListAdapter = new BookListAdapter();
+    private final BookListAdapter mBookListAdapter = new BookListAdapter(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         mBookListAdapter.updateData(DataHelp.createDataList());
+        bookList.addItemDecoration(new SpaceDecoration(DensityUtil.dip2px(this,10)));
         bookList.setAdapter(mBookListAdapter);
         bookList.setLayoutManager(new LinearLayoutManager(this));
     }
